@@ -15,12 +15,12 @@ let flipdata=function()
 {
     if(isMsDhoniold==true)
     {
-        displayobjext=MSDhonioldinfo;
+        displayobject=MSDhonioldinfo;
         isMsDhoniold=false;
     }
     else
     {
-        displayobjext=MSDhoninewinfo;
+        displayobject=MSDhoninewinfo;
         isMsDhoniold=true;
     }
     document.getElementById("cricketer").src=displayobject.imgurl;
