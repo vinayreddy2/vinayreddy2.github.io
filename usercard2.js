@@ -1,11 +1,11 @@
 let MSDhonioldinfo={
     imgurl: "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/319900/319946.png",
     name : "MS Dhoni",
-    Description: " Former Indian Cricketer"
+    Description: "Captain of Indian Cricket team"
 }
 let MSDhoninewinfo={
     imgurl: "https://resize.indiatvnews.com/en/resize/newbucket/400_-/2023/04/PTI04_03_2023_000319B.jpg",
-    name : "Mahendra Singh Dhoni",
+    name : "MS Dhoni",
     Description: "Csk Captain"
 }
 
@@ -15,14 +15,15 @@ let flipdata=function()
 {
     if(isMsDhoniold==true)
     {
-        displayobjext=MSDhoninewinfo;
+        displayobjext=MSDhonioldinfo;
         isMsDhoni=false;
     }
     else
     {
-        displayobjext=MSDhonioldinfo;
+        displayobjext=MSDhoninewinfo;
         isMsDhoni=true;
     }
     document.getElementById("cricketer").src=displayobject.imgurl;
     document.getElementById("cricketer_name").innerHTML=displayobject.name;
+    document.getElementById("cricketer_dec").innerHTML=displayobject.Description;
 }
